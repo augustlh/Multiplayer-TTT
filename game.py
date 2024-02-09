@@ -4,10 +4,13 @@ class GameState:
     def player_made_move():
         pass
 
-
 class Board:
+    def __init__(self, rows, cols):
+        self.rows, self.cols = rows, cols
+        self.grid = [[0 for _ in range(rows)] for _ in range(cols)]
+
     def check_winner() -> int:
-        """Check all diagonals, rows, and columns for """
+        """Check all diagonals, rows, and columns"""
         pass
 
 # game gøj
