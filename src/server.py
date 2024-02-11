@@ -41,6 +41,8 @@ def start_game(players: list[socket.socket]):
         conn2.send(f"other-made-move:{data[1]}".encode("utf-8"))
         
         xy = data[1].split(",")
+        if int(xy[0]) < 0 or int(xy[1]) < 0:
+            break
         game_state.make_move(int(xy[0]), int(xy[1]))
 
         conn1.send(f"should-stop-game:".encode("utf-8"))
