@@ -1,3 +1,7 @@
+# Alexander Hjort Fogh og August Leander Hedman
+# alex453d@edu.nextkbh.dk, augu1789@edu.nextkbh.dk
+# NEXT Sukkertoppen, S3n
+
 import sys
 import re
 import src.server as server
